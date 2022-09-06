@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+}
+
+
+header{
+    background: red;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.img-header{
+    background: url(/Logo/7755304385_decdac63-b2d1-4790-a624-69349a48de29.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 61px;
+
+}
+
+main{
+    background: red;
+    height: 30px;
+}
+
+.nav

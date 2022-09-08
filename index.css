@@ -5,36 +5,39 @@
 
 body {
     background: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
 header {
-    background: red;
+    background: linear-gradient(90deg, rgba(5, 10, 255, 1) 18%, rgba(188, 0, 255, 1) 57%);
     height: 70px;
 }
 
 
 .nav-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: relative;
     top: 5px;
+    left: 30px;
 }
 
 
 .img-header {
-    background: url(/Logo/7755304385_decdac63-b2d1-4790-a624-69349a48de29.png);
+    background: url(/Logo/logo.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 60px;
-    height: 59px;
-
+    background-size: cover;
+    width: 154px;
+    height: 54px;
+    position: absolute;
+    top: 3px;
+    left: 30px;
 }
 
 .nav-busq {
-    height: 35px;
+    height: 34.9px;
     width: 500px;
     border: none;
     outline: 0px;
@@ -57,13 +60,18 @@ header {
     top: 6.5px;
 }
 
+.nav-coment{
+    position: relative;
+    left: 130px;
+}
+
 .nav-btn>span {
     display: flex;
     align-items: center;
 }
 
 .nav-coment>p {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 8%, rgba(255, 204, 244, 1) 14%, rgba(255, 0, 198, 1) 24%, rgba(177, 5, 255, 1) 41%, rgba(0, 0, 0, 1) 56%, rgba(0, 14, 255, 1) 71%, rgba(0, 255, 21, 1) 86%, rgba(236, 255, 0, 1) 100%);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     font-size: 15px;
     font-family: 'Titan One';
 
@@ -71,8 +79,12 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+.nav-coment>p:hover {
+    cursor: default;
+}
+
 main {
-    background: red;
+    background: linear-gradient(90deg, rgba(5, 10, 255, 1) 18%, rgba(188, 0, 255, 1) 57%);
     height: 35px;
 }
 
@@ -147,7 +159,7 @@ main {
     gap: 20px;
 }
 
-.user-n>a>li{
+.user-n>a>li {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -155,8 +167,8 @@ main {
     left: 23px;
 }
 
-.user-n>a>li:hover{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 8%, rgba(255, 204, 244, 1) 14%, rgba(255, 0, 198, 1) 24%, rgba(177, 5, 255, 1) 41%, rgba(0, 0, 0, 1) 56%, rgba(0, 14, 255, 1) 71%, rgba(0, 255, 21, 1) 86%, rgba(236, 255, 0, 1) 100%);
+.user-n>a>li:hover {
+    background: radial-gradient(circle, rgba(130, 5, 255, 1) 7%, rgba(0, 14, 255, 1) 53%, rgba(0, 241, 255, 1) 97%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

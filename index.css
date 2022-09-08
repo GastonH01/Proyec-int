@@ -60,7 +60,7 @@ header {
     top: 6.5px;
 }
 
-.nav-coment{
+.nav-coment {
     position: relative;
     left: 130px;
 }
@@ -160,18 +160,23 @@ main {
 }
 
 .user-n>a>li {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 15px;
+    font-weight: 500;
     position: relative;
     left: 23px;
 }
 
-.user-n>a>li:hover {
-    background: radial-gradient(circle, rgba(130, 5, 255, 1) 7%, rgba(0, 14, 255, 1) 53%, rgba(0, 241, 255, 1) 97%);
+.fa-solid:hover{
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.user-n>a>li:hover {
+    color: #000;
 }
 
 .user-n>a {

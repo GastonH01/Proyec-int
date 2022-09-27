@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: hidden;
-}
 
 body {
     background: #ecebeb;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 2000px;
 }
 
 
@@ -336,10 +334,9 @@ main {
 
 .img-categ {
     position: relative;
-    left: 45px;
-    top: 30px;
-    width: 144px;
-    height: 142px;
+    left: 40px;
+    width: 140px;
+    height: 180px;
 }
 
 .ul-img {
@@ -368,18 +365,17 @@ main {
 .art-text {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     gap: 5px;
     position: absolute;
     width: 210px;
     height: 80px;
     background: #fff;
-    overflow: hidden;
 }
 
 .art-text:hover {
-    width: 210px;
-    height: 90px;
     transition: all .5s;
+    height: 100px;
 }
 
 .art-text::before {
@@ -393,8 +389,42 @@ main {
 }
 
 .span-t {
-    height: 15px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.span-t span:nth-child(1) {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.span-t:hover span:nth-child(1) {
+    height: 25px;
+    margin-left: 20px;
+    transition: .5s all;
+    background: linear-gradient(90deg, rgba(5, 10, 255, 1) 18%, rgba(188, 0, 255, 1) 57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.span-t span:nth-child(2) {
+    color: #fff;
+    margin-top: 4.5px;
+    font-weight: 500;
+
+}
+
+.span-t:hover span:nth-child(2) {
+    color: #00a650;
+    font-size: 16px;
+    transition: .5s all;
+}
+
+.span-t:hover {
+    height: 25px;
 }
 
 .span-text {
@@ -403,6 +433,8 @@ main {
     font-size: 15px;
     position: absolute;
     color: #fff;
+    margin-top: -15px;
+
 }
 
 .span-text:hover {
@@ -410,6 +442,7 @@ main {
     width: 100%;
     margin: 7px;
     height: 100%;
+    margin-top: -12px;
     transition: all .5s;
 }
 
@@ -424,11 +457,11 @@ main {
     transition: all .5s;
 }
 
-
-.text-h3 {
-    font-size: 25px;
-}
-
-.span-tex {
-    width: 82px;
+.p-inf {
+    position: absolute;
+    top: 55px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #00a650;
+    line-height: 22px;
 }
